@@ -1,0 +1,132 @@
+h1,h2{
+    font-family: 'Oxygen', sans-serif;
+}
+ h3{
+    font-size: 22px;
+    line-height: 30px;
+ }
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    @apply leading-8
+}
+
+b{
+    font-weight: 400;
+}
+
+li , .contain{
+    width: 90%;
+    max-width: 1125px;
+    @apply mx-auto
+}
+
+.norder{
+    flex: 1 0 0%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.head{
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.aside-list-head{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.content-section{
+    width:90%;
+    max-width:900px;
+}
+
+.first{
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+img{
+    align-items:center;
+    display: block;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0%;
+    text-align: center;
+    align-items: center; 
+    justify-content: space-between;
+    
+} 
+
+li img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+@media(min-width: 767px){
+    ul{
+        flex-direction: row;
+    }
+    ul li{
+       justify-content: space-between;
+    }
+    
+    img{
+
+    }
+
+    li p{
+        @apply my-4
+    }
+    
+    .list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .aside{
+        width: 50%;
+    }
+
+    .aside-list-head{
+        width: 50%;
+    }
+    .mob-hid{
+        display: none;
+    }
+}
+
+@media(max-width: 1127px){
+    .first{
+        margin-bottom: 24px;
+    }
+
+    .not-hid{
+        display: none;
+    }
+}

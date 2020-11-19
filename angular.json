@@ -15,8 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "webpack.config.js"
+            },
             "outputPath": "dist/cerdo",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -63,7 +66,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "browserTarget": "cerdo:build"
           },
@@ -124,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "cerdo"
+  "defaultProject": "cerdo",
+  "cli": {
+    "analytics": "de067ba3-c7ae-4456-bde6-7ca6bf136af2"
+  }
 }

@@ -1,1 +1,69 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import './app/products/products.component.css';
+@import './app/about-us/about-us.component.css';
+@import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  button{
+    
+    color: white;
+    appearance: button;
+    display: inline-block;
+    text-indent: 0;
+    font: 400 13.3333px Arial;
+}
+
+.but{
+    background: rgb(82, 51, 212);
+    min-width: 140px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 0px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 8px 16px;
+    transition: background 0.3s ease 0s, color 0.3s ease 0s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.butt{
+    background: rgba(255, 255, 255, 0.979);
+    color: rgb(82, 51, 212);
+    min-width: 140px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 0px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 8px 16px;
+    transition: background 0.3s ease 0s, color 0.3s ease 0s;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.cent{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

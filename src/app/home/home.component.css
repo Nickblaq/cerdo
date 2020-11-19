@@ -1,0 +1,212 @@
+.content-section{
+    width:90%;
+    max-width:1125px;
+}
+
+h1, h2{
+    font-family: 'Oxygen', sans-serif;
+    /* font-family: 'Commissioner', sans-serif; */
+    font-weight: 700;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    @apply leading-8
+}
+
+img{
+    display: block;
+    max-width: 80%;
+}
+
+.ani-text{
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+.typewriter{
+    color: rgb(23, 31, 70);
+}
+
+section.currencies {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+}
+
+.fqMvJN section.currencies > :not(:last-child) {
+    margin-right: 50px;
+}
+
+.jqAvK {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url(/assets/iconfinder_Dash_3443416.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 26px 30px;
+    box-shadow: rgba(23, 31, 70, 0.08) 0px 8px 40px;
+}
+
+.gHsSYz {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url(/assets/img/iconfinder_cryptocurrency_blockchain_Litecoin_LTC_2907502.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 21px 32px;
+    box-shadow: rgba(23, 31, 70, 0.08) 0px 8px 40px;
+}
+
+.duxBlm {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(82, 51, 212);
+}
+
+.fpVNYV {
+    border-radius: 4px;
+    background-image: url(/assets/img/iconfinder_ETH_1175230.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 38px 56px;
+    box-shadow: rgba(23, 31, 70, 0.08) 0px 8px 40px;
+}
+
+.blRAEx {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url(/assets/img/iconfinder_dash_dashcoin_2844383.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 27px 24px;
+    box-shadow: rgba(23, 31, 70, 0.08) 0px 8px 40px;
+}
+
+.fTuVGg {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url(/assets/img/iconfinder_cryptocurrency_blockchain_Ripple_XRP_2909597.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 31px 30px;
+    box-shadow: rgba(23, 31, 70, 0.08) 0px 8px 40px;
+}
+
+
+
+.asi{
+    border: 1.5rem solid #f9f9fe;
+} 
+
+.content-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listt{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    box-align: center;
+    align-items: center;
+    box-pack: center;
+    justify-content: center;
+}
+
+.listt-item:not(:last-child){
+    margin-bottom: 1.5em;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.img-yah{
+    width: 133px;
+    height: 49px;
+}
+
+.market-watch{
+    width: 266px;
+    height: 38px;
+}
+
+.market-insider{
+    width: 168px;
+    height: 58px;
+}
+
+.bit{
+    width: 259px;
+    height: 38px;
+}
+
+.ap{
+    width: 55px;
+    height: 49px;
+}
+
+.ipqzim {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+@media(min-width: 1024px){
+    .content-wrap{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .listt{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .asa{
+        width: 40%;
+        height: 80%;
+    }
+
+    .mai{
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 767px){
+    section.currencies {
+    justify-content: space-around;
+    /* margin-left: -2em;
+    margin-right: -2em; */
+    }
+
+    .CurrencyIcon{
+        width: 48px;
+        height: 48px;
+    }
+
+    :not(:last-child) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 767px){
+section.currencies > * {
+    flex-shrink: 0;
+    }
+}
